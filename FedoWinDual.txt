@@ -1,0 +1,20 @@
+-primer paso sera instalar windows si aun no se tiene 
+-segundo paso sera instalar fedora
+-instalacion customizada,
+-crear particiones automaticamente
+-despues de instalar reiniciar
+-en la terminal de fedora ejecutrar el instalar de grub {
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf install grub-customizer
+
+sudo grub-customizer
+}
+y ya para el tema seria{
+
+wget -P /tmp https://github.com/shvchk/poly-light/raw/master/install.sh
+
+bash /tmp/install.sh
+}
